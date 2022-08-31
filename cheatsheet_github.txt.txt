@@ -1,0 +1,11 @@
+touch .gitignore   # the folders which u do not want to upload
+git config --global user.name "your name"
+git config --global user.email "youremail@example.com"
+git init
+git add .
+git commit -m "Initial Commit"
+git status  # Just to see worrking tree
+ssh-keygen -t rsa - 4096 -C "youremail@example.com"
+tail or cat <path to id_rsa.pub>      #Add this key to your Github account
+git remote add origin <ssh url.git>
+git push origin master
